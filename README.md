@@ -3,23 +3,28 @@ This is a SpringBoot Project  performs CRUD operations on PostgreSQL database. T
 
 # Steps to create Swagger Documentation for your SpringBoot Application:
 1.	Add the following dependencies to pom.xml
-<dependency>
+```
+		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
-</dependency>
-<dependency>
+		</dependency>
+		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
-</dependency>
-
+		</dependency>
+```
 2.	Keep Spring framework version as 2.5.6 in pom.xml
-<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
-		<relativePath /> <!-- lookup parent from repository -->
-</parent>
+```
+		<parent>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>2.5.6</version>
+			<relativePath /> <!-- lookup parent from repository -->
+		</parent>
+```
 3.	Annotate the class which contains main method with @EnableSwagger2.
+
+>Note: You might get few errors in case you use the latest version. So make sure you use the same version as provided above. 
 
